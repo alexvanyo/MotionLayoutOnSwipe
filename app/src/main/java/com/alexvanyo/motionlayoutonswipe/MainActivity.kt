@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onTransitionChange(motionLayout: MotionLayout, startId: Int, endId: Int, progress: Float) {
                 Log.d("MainActivity", "onTransitionStarted: startId=$startId, endId=$endId, progress=$progress")
+                text.text = "Animating!"
             }
 
             override fun onTransitionCompleted(motionLayout: MotionLayout, currentId: Int) {

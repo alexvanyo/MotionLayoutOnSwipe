@@ -14,7 +14,7 @@
 
         <Constraint
             android:id="@+id/text"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="@id/firstSpace"
             motion:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
 
         <Constraint
             android:id="@+id/text"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             motion:layout_constraintBottom_toBottomOf="@id/secondSpace"
             motion:layout_constraintStart_toStartOf="parent"
