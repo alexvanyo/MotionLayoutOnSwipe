@@ -20,12 +20,12 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onTransitionChange(motionLayout: MotionLayout, startId: Int, endId: Int, progress: Float) {
-                Log.d("MainActivity", "onTransitionStarted: startId=$startId, endId=$endId, progress=$progress")
+                Log.d("MainActivity", "onTransitionChange: startId=$startId, endId=$endId, progress=$progress")
                 text.text = "Animating!"
             }
 
             override fun onTransitionCompleted(motionLayout: MotionLayout, currentId: Int) {
-                Log.d("MainActivity", "onTransitionStarted: currentId=$currentId")
+                Log.d("MainActivity", "onTransitionCompleted: currentId=$currentId")
 
                 text.text = (when (currentId) {
                     R.id.collapsed -> "Collapsed!"
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onTransitionTrigger(motionLayout: MotionLayout, triggerId: Int, positive: Boolean, progress: Float) {
-                Log.d("MainActivity", "onTransitionStarted: triggerId=$triggerId, positive=$positive, progress=$progress")
+                Log.d("MainActivity", "onTransitionTrigger: triggerId=$triggerId, positive=$positive, progress=$progress")
             }
         })
     }
